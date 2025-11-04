@@ -40,8 +40,6 @@ Retrieve relevant chunks and feed them to the model to generate answers.
 
 ## 🧠 High-Level Architecture
 
-## 🧠 High-Level Architecture
-
 ```mermaid
 flowchart LR
     UserQuery --> EmbedQuery --> VectorSearch --> RetrieveChunks --> LLM --> Answer

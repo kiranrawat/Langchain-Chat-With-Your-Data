@@ -47,6 +47,7 @@ flowchart LR
     Documents --> Load --> Chunk --> EmbedDocs --> VectorDB
     VectorDB --> VectorSearch
 
+```md
 ## 📓 Notebooks Overview
 
 This repository contains Jupyter notebooks following the structure of the *LangChain — Chat With Your Data* course, each focused on a core component of the RAG workflow.

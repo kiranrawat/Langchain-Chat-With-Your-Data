@@ -15,6 +15,19 @@ Build a system that can:
 - Store vectors in a vector database
 - Retrieve relevant text for a query
 - Use an LLM to answer questions grounded in retrieved context
+---
+## 📓 Notebooks Overview
+
+This repository contains Jupyter notebooks following the structure of the *LangChain — Chat With Your Data* course, each focused on a core component of the RAG workflow.
+
+| Notebook | Topic | Description |
+|---|---|---|
+`01_document_loading.ipynb` | Document Loading | Load and parse documents into a structured text format for processing |
+`02_document_splitting.ipynb` | Document Splitting (Chunking) | Split documents into semantically meaningful chunks to preserve context |
+`03_vectorstores_and_embeddings.ipynb` | Embeddings & Vector Stores | Convert text chunks into embeddings and store them in a vector DB |
+`04_retrieval.ipynb` | Retrieval | Perform similarity search to retrieve relevant chunks based on a user query |
+`05_question_answering.ipynb` | QA Chain | Combine retrieved text with an LLM to answer questions grounded in docs |
+`06_chat_bot.ipynb` | Chatbot Integration | Build an interactive chat interface that queries data using the RAG pipeline |
 
 ---
 
@@ -46,20 +59,3 @@ flowchart LR
 
     Documents --> Load --> Chunk --> EmbedDocs --> VectorDB
     VectorDB --> VectorSearch
-
-
-```md
-
-
-## 📓 Notebooks Overview
-
-This repository contains Jupyter notebooks following the structure of the *LangChain — Chat With Your Data* course, each focused on a core component of the RAG workflow.
-
-| Notebook | Topic | Description |
-|---|---|---|
-`01_document_loading.ipynb` | Document Loading | Load and parse documents into a structured text format for processing |
-`02_document_splitting.ipynb` | Document Splitting (Chunking) | Split documents into semantically meaningful chunks to preserve context |
-`03_vectorstores_and_embeddings.ipynb` | Embeddings & Vector Stores | Convert text chunks into embeddings and store them in a vector DB |
-`04_retrieval.ipynb` | Retrieval | Perform similarity search to retrieve relevant chunks based on a user query |
-`05_question_answering.ipynb` | QA Chain | Combine retrieved text with an LLM to answer questions grounded in docs |
-`06_chat_bot.ipynb` | Chatbot Integration | Build an interactive chat interface that queries data using the RAG pipeline |

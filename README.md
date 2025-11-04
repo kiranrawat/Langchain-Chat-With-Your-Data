@@ -6,7 +6,7 @@ This project demonstrates how to build a Retrieval-Augmented Generation (**RAG**
 
 ---
 
-## 🎯 Objective
+## Objective
 Build a system that can:
 
 - Ingest external documents
@@ -18,27 +18,27 @@ Build a system that can:
 
 ---
 
-## 📚 Key Learnings
+## Key Learnings
 
-### ✅ Retrieval-Augmented Generation (RAG)
+### Retrieval-Augmented Generation (RAG)
 LLMs augmented with external knowledge for factual, grounded answers.
 
-### ✅ Document Loading
+### Document Loading
 Import documents (PDF, text, web, etc.) into a structured format.
 
-### ✅ Chunking Strategy
+### Chunking Strategy
 Semantic chunking > fixed-size splitting.  
 Good segmentation improves embedding quality and retrieval accuracy.
 
-### ✅ Embeddings & Vector Store
+### Embeddings & Vector Store
 Convert text → embeddings → store in FAISS/Chroma for similarity search.
 
-### ✅ Retrieval + QA Chain
+### Retrieval + QA Chain
 Retrieve relevant chunks and feed them to the model to generate answers.
 
 ---
 
-## 🧠 High-Level Architecture
+## High-Level Architecture
 
 ```mermaid
 flowchart LR
@@ -46,3 +46,16 @@ flowchart LR
 
     Documents --> Load --> Chunk --> EmbedDocs --> VectorDB
     VectorDB --> VectorSearch
+
+## 📓 Notebooks Overview
+
+This repository contains Jupyter notebooks following the structure of the *LangChain — Chat With Your Data* course, each focused on a core component of the RAG workflow.
+
+| Notebook | Topic | Description |
+|---|---|---|
+`01_document_loading.ipynb` | Document Loading | Load and parse documents into a structured text format for processing |
+`02_document_splitting.ipynb` | Document Splitting (Chunking) | Split documents into semantically meaningful chunks to preserve context |
+`03_vectorstores_and_embeddings.ipynb` | Embeddings & Vector Stores | Convert text chunks into embeddings and store them in a vector DB |
+`04_retrieval.ipynb` | Retrieval | Perform similarity search to retrieve relevant chunks based on a user query |
+`05_question_answering.ipynb` | QA Chain | Combine retrieved text with an LLM to answer questions grounded in docs |
+`06_chat_bot.ipynb` | Chatbot Integration | Build an interactive chat interface that queries data using the RAG pipeline |

@@ -1,6 +1,6 @@
 # Langchain-Chat-With-Your-Data
 
-Part of the learning I had from the Deeplearning.AI course: *LangChain — Chat With Your Data* by Harrison Chase.
+Part of the learning I had from the Deeplearning.AI course: *LangChain : Chat With Your Data* by Harrison Chase.
 
 This project demonstrates how to build a Retrieval-Augmented Generation (**RAG**) pipeline using LangChain to enable an LLM to answer questions based on private documents.
 
